@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: BIO6032
 description: "change the _config.yml to put your name here"
+permalink: /:title

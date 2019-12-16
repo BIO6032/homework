@@ -2,9 +2,17 @@
 
 <!-- Unless explicitly indicated, do not change anything in this file -->
 
-[DEMO][demo]
+As part of your evaluation for the class, you need to turn in 11 reports, at a
+rate of about one per week. These will form the entirety of your evaluation. The
+reports must be written as executable markdown files. An example of the expected
+work is given in the `homework/00_demonstration.Jmd`, and compiled [to this
+webpage][demo]. This provides a template for your answers, and also gives an
+overview of how to structure the documents.
 
-[demo]: /homework/00_demonstration/
+[demo]: ./homework/00_demonstration/
+
+The reports will be compiled automatically, to ensure that your work is fully
+reproducible.
 
 ## Summary table
 

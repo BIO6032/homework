@@ -23,7 +23,9 @@ jobs:
       - name: "Make index page"
         run: cp README.md dist/index.md
       - name: "Build the demonstration"
-        run: julia --project -e 'using Weave; weave(joinpath("homework", "00_demonstration.Jmd"); doctype="github", out_path=joinpath("dist", "homework"))'
+        run: julia --project -e 'using Weave; weave(joinpath("homework", "00_demonstration.Jmd"); doctype="github", out_path="dist")'
+      - name: "HOMEWORK 01"
+        run: julia --project -e 'using Weave; weave(joinpath("homework", "01_bifurcation.Jmd"); doctype="github", out_path="dist")'
       - name: "GitHub Pages deployment"
         uses: maxheld83/ghpages@v0.2.1
         env:

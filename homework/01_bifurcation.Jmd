@@ -1,6 +1,17 @@
-# 01 - bifurcation diagram
+---
+title: Bifurcation diagram
+---
 
-> Copy and paste the instructions here
+# Introduction
+
+> Copy and paste the instructions from Studium here, and write the introduction
+> below
+
+## Required packages
+
+```julia
+# Add required pacjages here
+```
 
 ## Model description and justification
 
