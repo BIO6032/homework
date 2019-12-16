@@ -42,6 +42,12 @@ end
 hw(0.5)
 ```
 
+```julia
+p = collect(0.0:0.05:1.0)
+frequencies = hw.(p)
+scatter(frequencies)
+```
+
 ### Stochastic simulations
 
 ## Conclusions
