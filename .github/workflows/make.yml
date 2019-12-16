@@ -20,6 +20,8 @@ jobs:
           version: ${{ matrix.julia-version }}
       - name: "Make index page"
         run: cp README.md dist/index.md
+      - name: "Build the demonstration"
+        run: julia --project -e 'using Weave; weave(joinpath("homework", "00_demonstration.Jmd"); doctype="github", out_path=joinpath("dist", "homework"))'
       - name: "GitHub Pages deployment"
         uses: maxheld83/ghpages@v0.2.1
         env:
