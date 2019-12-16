@@ -20,3 +20,8 @@ jobs:
           version: ${{ matrix.julia-version }}
       - name: "Make index page"
         run: cp README.md dist/index.md
+      - name: "GitHub Pages deployment"
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          BUILD_DIR: "dist/"
+          GH_PAT: ${{ secrets.ACCESS_TOKEN }}
