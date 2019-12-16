@@ -62,6 +62,6 @@ heading`).
 
 **Model analysis:** 30 points, including a discussion of possible mechanisms not captured by the model and their influence on the results
 
-**Model implementation:** 50 points, sub-divided as follows: 15 points if the code runs properly, 10 points for writing functions, 10 points for proper function documentation and comments, 5 points for function and parameters naming, 10 points for appropriate data structure and representation
+**Model implementation:** 50 points, sub-divided as follows: 15 points if the code runs properly, 10 points for writing functions, 10 points for proper function documentation and comments (every non-documented function removes 5 points), 5 points for function and parameters naming, 10 points for appropriate data structure and representation
 
 **Presentation:** 10 points, including language quality and structure of the text, as well as proper visualization of the results
