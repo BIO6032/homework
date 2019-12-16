@@ -1,6 +1,6 @@
 theme: minimal
 title: BIO6032
 description: "change the _config.yml to put your name here"
-permalink: slug
+permalink: /:slug/
 plugins:
   - jekyll-sitemap
