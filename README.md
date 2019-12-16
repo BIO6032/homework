@@ -3,18 +3,34 @@
 <!-- Unless explicitly indicated, do not change anything in this file -->
 
 As part of your evaluation for the class, you need to turn in 11 reports, at a
-rate of about one per week. These will form the entirety of your evaluation. The
-reports must be written as markdown files containing executable *Julia* code. An
-example of the expected work is given in the `homework/00_demonstration.Jmd`,
-and compiled [to this webpage][demo]. This provides a template for your answers,
-and also gives an overview of how to structure the documents.
+rate of about one per week. You are free to submit the assignments at a rate
+that suits you, however the theory required matches with specific in-class
+readings and discussions. In addition, every assignment represents a
+considerable amount of work. These will form the entirety of your evaluation.
+There is no extra credit for this class, and grades will not be curved.
+
+The grading for these assignments accounts both for the mathematics and model
+analysis, and for the implementation and analysis. An additional 10 points are
+dedicated to presentation, writing, and data representation. The complete list
+of assignments, as well as the details on grading, are given below. Assignments
+that are more complex are worth a greater fraction of your final grade.
+
+To submit an assignment, you must provide a link to the specific commit that
+represent the final version of this assignment. 5% will be subtracted from your
+*final* grade for every assignment that is modified after being submitted, and
+an extra 1% will be subtracted for *every* commit modifying more than one
+assignment. This can add up rapidly.
+
+The reports must be written as markdown files containing executable *Julia*
+code. An example of the expected work is given in the
+`homework/00_demonstration.Jmd`, and compiled [to this webpage][demo]. This
+provides a template for your answers, and also gives an overview of how to
+structure the documents. The reports will be compiled automatically, to ensure
+that your work is fully reproducible. This implies that any data you may need to
+use will be downloaded from the script using `download`. All equations must be
+rendered using LaTeX code.
 
 [demo]: ./homework/00_demonstration/
-
-The reports will be compiled automatically, to ensure that your work is fully
-reproducible. This implies that any data you may need to use will be downloaded
-from the script using `download`. All equations must be rendered using LaTeX
-code.
 
 ## Summary table
 
