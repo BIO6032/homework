@@ -18,6 +18,8 @@ jobs:
       - uses: julia-actions/setup-julia@latest
         with:
           version: ${{ matrix.julia-version }}
+      - name: "Install the packages"
+        run: julia --project -e 'import Pkg; Pkg.instantiate()'
       - name: "Make index page"
         run: cp README.md dist/index.md
       - name: "Build the demonstration"
