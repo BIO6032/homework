@@ -31,4 +31,8 @@ function hw(p::Float64=0.5)
 end
 ```
 
+```julia
+hw(0.5)
+```
+
 ## Conclusions
