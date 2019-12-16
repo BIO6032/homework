@@ -6,17 +6,18 @@
 
 ```julia
 using Plots
+using Distributions
 ```
 
 ## Model description and justification
 
 The Hardy-Weinberg equilibrium is ...
 
-
-
 ## Model analysis
 
 ## Simulations
+
+### Theoretical predictions
 
 ```julia
 """
@@ -34,5 +35,7 @@ end
 ```julia
 hw(0.5)
 ```
+
+### Stochastic simulations
 
 ## Conclusions

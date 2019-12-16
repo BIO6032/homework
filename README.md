@@ -2,6 +2,10 @@
 
 <!-- Unless explicitly indicated, do not change anything in this file -->
 
+[DEMO][demo]
+
+[demo]: /homework/00_demonstration/
+
 ## Summary table
 
 <!-- Copy this symbol ✔️ in the Done column when the homework is finished -->
