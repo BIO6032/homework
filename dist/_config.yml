@@ -1,6 +1,5 @@
 remote_theme: rosario/kasper
 title: BIO6032
 description: "change the _config.yml to put your name here"
-permalink: /:slug/
 plugins:
   - jekyll-sitemap
