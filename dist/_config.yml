@@ -1,4 +1,5 @@
 remote_theme: poole/lanyon
+baseurl: homework
 title: BIO6032
 description: "change the _config.yml to put your name here"
 permalink: /:slug
