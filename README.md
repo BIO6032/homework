@@ -2,12 +2,12 @@
 title: BIO 6032 homework
 ---
 
-# BIO 6032 homework - {{ your name here }}
+# BIO 6032 homework
 
 <!-- Unless explicitly indicated, do not change anything in this file -->
 
 As part of your evaluation for the class, you need to turn in 11 reports, at a
-rate of about one per week. You are free to submit the assignments at a rythm
+rate of about one per week. You are free to submit the assignments at a rhythm
 that suits you, however the theory required matches with specific in-class
 readings and discussions. In addition, every assignment represents a
 considerable amount of work, and it is not advised to wait until later in the
