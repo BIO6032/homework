@@ -18,3 +18,5 @@ jobs:
       - uses: julia-actions/setup-julia@latest
         with:
           version: ${{ matrix.julia-version }}
+      - name: "Make index page"
+        run: cp README.md dist/index.md
