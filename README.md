@@ -1,14 +1,10 @@
 # BIO 6032 homework - {{ your name here }}
 
-<!--
-
-Copy this symbol ✔️ in the Done column when the homework is finished
-
-Do not change anything else in the table or in this file
-
--->
+<!-- Unless explicitly indicated, do not change anything in this file -->
 
 ## Summary table
+
+<!-- Copy this symbol ✔️ in the Done column when the homework is finished -->
 
 |      | Title                           | Done | Difficulty | Ponderation |
 |:----:| ------------------------------- | ---- | ---------- | -----------:|
@@ -26,7 +22,11 @@ Do not change anything else in the table or in this file
 
 ## Evaluation criteria
 
-All homework is graded on a total of 100 points.
+All homework is graded on a total of 100 points. In all cases, you must copy the
+instructions (from Studium) into the first quote block, and then write an
+introduction. Do not modify the headings of any of the sections, though you are
+allowed to (and most definitely will need to) add third-level headings (`###
+heading`).
 
 **Model justification:** 10 points, including a discussion of the parameters and/or functional responses used
 
