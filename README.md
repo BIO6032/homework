@@ -1,3 +1,7 @@
+---
+title: BIO 6032 homework
+---
+
 # BIO 6032 homework - {{ your name here }}
 
 <!-- Unless explicitly indicated, do not change anything in this file -->
