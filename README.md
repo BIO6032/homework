@@ -44,19 +44,19 @@ rendered using LaTeX code.
 
 <!-- Copy this symbol ✔️ in the Done column when the homework is finished -->
 
-|      | Title                           | Done | Difficulty | Ponderation |
-|:----:| ------------------------------- | ---- | ---------- | -----------:|
-| `01` | Bifurcation diagram             |      | ❗         |           4 |
-| `02` | Logistic growth                 |      | ❗         |           4 |
-| `03` | Logistic growth and competition |      | ❗         |           6 |
-| `04` | Stability                       |      | ❗❗       |          10 |
-| `05` | Spatial dynamics 1              |      | ❗         |           8 |
-| `06` | Evolutionary branching 1        |      | ❗❗❗     |          15 |
-| `07` | Stochastic model of epidemics   |      | ❗         |           5 |
-| `08` | Spatial dynamics 2              |      | ❗❗       |          12 |
-| `09` | Parameters inference            |      | ❗❗❗     |          12 |
-| `10` | Evolutionary branching 2        |      | ❗❗❗     |          12 |
-| `11` | Spatial dynamics 3              |      | ❗❗❗     |          12 |
+|      | Title                                          | Done | Difficulty | Ponderation |
+|:----:| ---------------------------------------------- | ---- |:----------:| -----------:|
+| `01` | [Bifurcation diagram](bifurcation)             |      |     *      |           4 |
+| `02` | [Logistic growth](logistic)                    |      |     *      |           4 |
+| `03` | [Logistic growth and competition](competition) |      |     *      |           6 |
+| `04` | [Stability](stability)                         |      |     **     |          10 |
+| `05` | [Spatial dynamics 1](sd1)                      |      |     *      |           8 |
+| `06` | [Evolutionary branching 1](eia)                |      |    ***     |          15 |
+| `07` | [Stochastic model of epidemics](epidemics)     |      |     *      |           5 |
+| `08` | [Spatial dynamics 2](sd2)                      |      |     **     |          12 |
+| `09` | [Parameters inference](inference)              |      |    ***     |          12 |
+| `10` | [Evolutionary branching 2](eia)                |      |    ***     |          12 |
+| `11` | [Spatial dynamics 3](sd3)                      |      |    ***     |          12 |
 
 ## Evaluation criteria
 
