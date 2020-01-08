@@ -29,6 +29,18 @@ As the individuals in our model carry either $A$ or $a$, we can simply model the
 frequency of $A$ at time $t$, called $p(t)$, and write that the frequency of $a$
 is $1-p(t)$.
 
+We further assume that the allele $A$ has a fitness of $\omega_A$, and the
+allele $a$ has a fitness of $\omega_a$. Because we want to represent the fact
+that $a$ is less fit than $A$, we will set $\omega_A = 1$, and $\omega_a =
+(1-s)$, where $s$ is a number in $[0,1]$ representing the strength of the
+selection against $a$.
+
+The proportion of allele $A$ in the population at the next timestep is called
+$p(t+1)$ -- it can be calculated based on the fitness of $A$ *relative* to the
+total fitness of the population. The total fitness of the population is
+
+$$\omega_A p(t) + \omega_a (1-p(t))$$
+
 ## Model analysis
 
 ## Simulations
