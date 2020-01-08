@@ -126,21 +126,47 @@ whenever the mutation rate is lower than the strength of selection against $a$.
 
 ### Theoretical predictions
 
+We can write a simple model that takes $p(t)$ as an argument, and $\mu$ and $s$
+as optional arguments, and returns $p(t+1)$:
+
 ```julia
 """
 DOC GOES HERE
 """
-function hw(p::Float64=0.5)
-  # TODO
+function haploid(p::Float64=0.5; μ::Float64=0.01, s::Float64=0.1)
+  # All of the parameters and variables must be between 0 and 1
+  @assert 0.0 ≤ μ ≤ 1.0
+  @assert 0.0 ≤ s ≤ 1.0
   @assert 0.0 ≤ p ≤ 1.0
-  # TODO
-  q = 1.0 - p
-  return [p*p, 2*p*q, q*q]
+  ω = p+(1-s)*(1-p)
+  return (1-μ)*(p/ω)
 end
 ```
 
+We can also write a function to give the value of $\hat P$ directly:
+
 ```julia
-hw(0.5)
+"""
+DOC GOES HERE
+"""
+function equilibrium(;μ::Float64=0.01, s::Float64=0.3)
+  # All of the parameters and variables must be between 0 and 1
+  @assert 0.0 ≤ μ ≤ 1.0
+  @assert 0.0 ≤ s ≤ 1.0
+  return μ>s ? 0 : 1-(μ/s)
+end
+```
+
+```julia; fig_cap="test"
+M = 10.0.^(-3:0.1:-0.5)
+eq = [equilibrium(μ=m, s=0.2) for m in M]
+plot(M, eq,
+  c=:black, fill=(:grey, 0, 0.2),
+  leg=false,
+  frame=:box,
+  xaxis=:log, xlabel="Mutation rate", xlim=(0.001,1.0),
+  ylabel="Equilibrium frequency of A", ylim=(0,1))
+vline!([0.2], c=:red, ls=:dot)
 ```
 
 ```julia
