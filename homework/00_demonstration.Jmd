@@ -20,6 +20,10 @@ using Distributions
 
 The Hardy-Weinberg equilibrium is ...
 
+$x^2$
+
+$$\frac{dx}{dt} = x^{-2}$$
+
 ## Model analysis
 
 ## Simulations
