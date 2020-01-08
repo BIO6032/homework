@@ -28,7 +28,7 @@ structure the documents. The reports will be compiled automatically, to ensure
 that your work is fully reproducible. This implies that any data you may need to
 use will be downloaded from the script using `download`.
 
-[demo]: /demonstration/
+[demo]: /homework/demonstration/
 
 All equations must be rendered using LaTeX code. Please note that the process by
 which an answer is reahed is as important as the answer itself, and so the
