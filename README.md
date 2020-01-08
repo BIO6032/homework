@@ -2,8 +2,6 @@
 title: BIO 6032 homework
 ---
 
-# BIO 6032 homework
-
 <!-- Unless explicitly indicated, do not change anything in this file -->
 
 As part of your evaluation for the class, you need to turn in 11 reports, at a
@@ -38,7 +36,7 @@ that your work is fully reproducible. This implies that any data you may need to
 use will be downloaded from the script using `download`. All equations must be
 rendered using LaTeX code.
 
-[demo]: ./homework/00_demonstration/
+[demo]: /demonstration/
 
 ## Summary table
 
