@@ -41,6 +41,10 @@ total fitness of the population. The total fitness of the population is
 
 $$\omega_A p(t) + \omega_a (1-p(t))$$
 
+Therefore, the frequency of $A$ at time $t+1$ is
+
+$$p(t+1) = \frac{\omega_A p(t)}{\omega_A p(t) + \omega_a (1-p(t))}$$
+
 ## Model analysis
 
 ## Simulations
