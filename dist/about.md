@@ -7,12 +7,12 @@ permalink: /about/
 ## Grading
 
 The grading for these assignments accounts both for the mathematics and model
-analysis, and for the implementation and analysis. An additional 10 points are
-dedicated to presentation, writing, and data representation. The complete list
-of assignments, as well as the details on grading, are given below. Assignments
-that are more complex are worth a greater fraction of your final grade. Every
-report should be at least 1200 words long, with the more complex reports being
-up to twice this length.
+analysis, and for the implementation and analysis of the results. An additional
+10 points are dedicated to presentation, writing, and data representation. The
+complete list of assignments, as well as the details on grading, are given on
+the main page. Assignments that are more complex are worth a greater fraction of
+your final grade. Every report should be at least 1200 words long, with the more
+complex reports being up to twice this length.
 
 To submit an assignment, you must provide a link to the specific commit that
 represent the final version of this assignment. 5% will be subtracted from your
@@ -26,10 +26,13 @@ file contained in the `homework` folder, and compiled [to this webpage][demo].
 This provides a template for your answers, and also gives an overview of how to
 structure the documents. The reports will be compiled automatically, to ensure
 that your work is fully reproducible. This implies that any data you may need to
-use will be downloaded from the script using `download`. All equations must be
-rendered using LaTeX code.
+use will be downloaded from the script using `download`.
 
 [demo]: /demonstration/
+
+All equations must be rendered using LaTeX code. Please note that the process by
+which an answer is reahed is as important as the answer itself, and so the
+mathematical analysis of the model *must* be accompanied by text.
 
 ## Evaluation criteria
 

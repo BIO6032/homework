@@ -1,3 +1,4 @@
 baseurl: /homework
 name: UdeM - BIO6032
 description: "change the _config.yml to put your name here"
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
