@@ -78,7 +78,7 @@ $$\omega_A - \omega_a = \hat p(\omega_A - \omega_a)$$
 
 This can be written as
 
-$$\hat p = \frac{\omega_A - \omega_a}{\omega_A - \omega_a} = 1 \qed$$
+$$\hat p = \frac{\omega_A - \omega_a}{\omega_A - \omega_a} = 1$$
 
 There is no possible polymorphism in the absence of mutation.
 
@@ -101,6 +101,22 @@ After cancelling $\hat p$ in the right hand side, we have
 
 $$(1-\mu) = \frac{\omega_A}{\omega_A}\hat p + \frac{\omega_a}{\omega_A}(1-\hat p)$$
 
+This simplifies to
+
+$$(1-\mu) = \hat p + \frac{\omega_a}{\omega_A}(1-\hat p)$$
+
+As we have defined $\omega_A = 1, \omega_a = 1-s$, we can re-write the previous
+expression as
+
+$$(1-\mu) = \hat p + (1-s)(1-\hat p)$$
+
+This further recudes to
+
+$$(1-\mu) = 1 - s + s\hat p$$
+
+which is finally
+
+$$\hat p = \frac{s-\mu}{s} = 1-\frac{\mu}{s}$$
 
 ## Simulations
 
