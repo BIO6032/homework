@@ -45,6 +45,13 @@ Therefore, the frequency of $A$ at time $t+1$ is
 
 $$p(t+1) = \frac{\omega_A p(t)}{\omega_A p(t) + \omega_a (1-p(t))}$$
 
+Because replication is always imperfect, we add to this model a mutation rate
+$\mu$, which varies in $[0,1[$. Adding the mutations is simply a matter of
+decreasing the proportion of $A$ at the next timestep (by a factor of $\mu$),
+and so the final equation for the frequency of $A$ through time is
+
+$$p(t+1) = (1-\mu)\frac{\omega_A p(t)}{\omega_A p(t) + \omega_a (1-p(t))}$$
+
 ## Model analysis
 
 ## Simulations
