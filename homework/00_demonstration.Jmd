@@ -66,7 +66,7 @@ $$\hat p = \frac{\omega_A \hat p}{\omega_A \hat p + \omega_a (1-\hat p)}$$
 
 We can express this as
 
-$$\hat p (\omega_A \hat p + \omega_a (1-\hat p)) = \omega_A \hat p}$$
+$$\hat p (\omega_A \hat p + \omega_a (1-\hat p)) = \omega_A \hat p$$
 
 which simplifies to
 
@@ -92,6 +92,15 @@ also 0, and the allele $A$ cannot invade.
 In the general case, we need to solve for
 
 $$\hat p = (1-\mu)\frac{\omega_A \hat p}{\omega_A \hat p + \omega_a (1-\hat p)}$$
+
+We can isolate the term in $\mu$ this way:
+
+$$(1-\mu) = \hat p \frac{\omega_A \hat p + \omega_a (1-\hat p)}{\omega_A \hat p}$$
+
+After cancelling $\hat p$ in the right hand side, we have
+
+$$(1-\mu) = \frac{\omega_A}{\omega_A}\hat p + \frac{\omega_a}{\omega_A}(1-\hat p)$$
+
 
 ## Simulations
 
