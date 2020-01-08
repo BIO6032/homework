@@ -58,7 +58,7 @@ This model is a discrete time model, so it has an equilibrium every time $p(t+1)
 = p(t)$. We will look a number of special cases, and then give the general
 solution. For every $p$ that is an equilibrium, we will note it $\hat p$.
 
-### Special case 1 - mo mutation
+### Special case 1 - no mutation
 
 In the absence of mutation, the equilibrium exists if
 
@@ -81,6 +81,17 @@ This can be written as
 $$\hat p = \frac{\omega_A - \omega_a}{\omega_A - \omega_a} = 1 \qed$$
 
 There is no possible polymorphism in the absence of mutation.
+
+### Special case 2 - A is initially absent
+
+In the absence of $A$ initially, we know that $p(t) = 0$; therefore, $p(t+1)$ is
+also 0, and the allele $A$ cannot invade.
+
+### General case
+
+In the general case, we need to solve for
+
+$$\hat p = (1-\mu)\frac{\omega_A \hat p}{\omega_A \hat p + \omega_a (1-\hat p)}$$
 
 ## Simulations
 
