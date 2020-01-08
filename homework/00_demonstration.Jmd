@@ -54,6 +54,34 @@ $$p(t+1) = (1-\mu)\frac{\omega_A p(t)}{\omega_A p(t) + \omega_a (1-p(t))}$$
 
 ## Model analysis
 
+This model is a discrete time model, so it has an equilibrium every time $p(t+1)
+= p(t)$. We will look a number of special cases, and then give the general
+solution. For every $p$ that is an equilibrium, we will note it $\hat p$.
+
+### Special case 1 - mo mutation
+
+In the absence of mutation, the equilibrium exists if
+
+$$\hat p = \frac{\omega_A \hat p}{\omega_A \hat p + \omega_a (1-\hat p)}$$
+
+We can express this as
+
+$$\hat p (\omega_A \hat p + \omega_a (1-\hat p)) = \omega_A \hat p}$$
+
+which simplifies to
+
+$$\omega_A = \omega_A \hat p + \omega_a (1-\hat p)$$
+
+This further simplifies to
+
+$$\omega_A - \omega_a = \hat p(\omega_A - \omega_a)$$
+
+This can be written as
+
+$$\hat p = \frac{\omega_A - \omega_a}{\omega_A - \omega_a} = 1 \qed$$
+
+There is no possible polymorphism in the absence of mutation.
+
 ## Simulations
 
 ### Theoretical predictions
