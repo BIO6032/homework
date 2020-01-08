@@ -52,6 +52,14 @@ and so the final equation for the frequency of $A$ through time is
 
 $$p(t+1) = (1-\mu)\frac{\omega_A p(t)}{\omega_A p(t) + \omega_a (1-p(t))}$$
 
+We can note that there is no possibility for an allele $a$ to return to an
+allele $A$ through mutation. This is a reasonable assumption, if one assumes
+that $a$ is a simplification for "all the alleles that are not the most
+competitive one", and further assumes that the chance of mutating from $A$ to
+$a$ and then having only the reversal mutation is minuscule. This represents an
+acceptable simplification, which also greatly simplifies the analysis of the
+model.
+
 ## Model analysis
 
 This model is a discrete time model, so it has an equilibrium every time $p(t+1)
@@ -195,4 +203,43 @@ vline!([0.2], c=:red, ls=:dot)
 
 ### Stochastic simulations
 
+This model represents processes that are stochastic. Therefore, we will
+implement a stochastic simulation scenario, based on the assumption that the
+population is of finite size.
+
+```julia
+n = 100 # population size
+A = rand(1:n)
+```
+
+We know that $p(t+1)$ is a proportion in the next time step, so we can interpet
+it as the probability of a future individual having the allele $A$. As there are
+$n$ individuals in the population, we can get the number of alleles $A$ as being
+the result of a random draw in a Binomial distribution with $n$ draws, and a
+$p(t+1)$ success rate.
+
+```julia
+ts = zeros(Int64, 90)
+ts[1] = A
+for i in 2:length(ts)
+  ts[i] = rand(Binomial(n, haploid(ts[i-1]/n; μ=0.2, s=0.93)))
+end
+plot(ts./n, c=:black, ylim=(0,1), leg=false,
+  xlabel="Timestep", ylabel="Frequency of A")
+hline!([equilibrium(μ=0.2, s=0.93)], c=:red, ls=:dot)
+```
+
+This simple simulation reveals that the presence of stochasticity can trigger
+variations around the equilibrium. This effect may be accentuated in smaller
+populations.
+
 ## Conclusions
+
+We have designed a simple model of haploid genomes, where diversity occurs
+through mutation despite the presence of a negative selective effect on one of
+the alleles. For polymorphism to persist, we have identified that the mutation
+rate must be lower than the loss of fitness in the least competitive genotype.
+In the final section, we show that adding stochasticity to this model can lead
+the system to move around the equilibrium, and it would be interesting to test
+if this effect can lead to extinction of the most competitive allele in small
+populations.
