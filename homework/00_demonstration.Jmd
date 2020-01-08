@@ -85,7 +85,8 @@ There is no possible polymorphism in the absence of mutation.
 ### Special case 2 - A is initially absent
 
 In the absence of $A$ initially, we know that $p(t) = 0$; therefore, $p(t+1)$ is
-also 0, and the allele $A$ cannot invade.
+also 0, and the allele $A$ cannot invade. This can be verified by noting the
+total fitness as $\omega$, and observing that $p(t+1)$ becomes $0/\omega$.
 
 ### General case
 
@@ -117,6 +118,9 @@ $$(1-\mu) = 1 - s + s\hat p$$
 which is finally
 
 $$\hat p = \frac{s-\mu}{s} = 1-\frac{\mu}{s}$$
+
+This equilibrium exists, *i.e.* $\hat p > 0$ *iff* $\mu/s < 1$, which is to say
+whenever the mutation rate is lower than the strength of selection against $a$.
 
 ## Simulations
 
