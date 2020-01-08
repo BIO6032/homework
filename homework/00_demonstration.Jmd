@@ -178,9 +178,10 @@ function equilibrium(;μ::Float64=0.01, s::Float64=0.3)
 end
 ```
 
-We will use this function to
+We will use this function to show how the predicted equilibrium changes when the
+rate of mutation increases:
 
-```julia; fig_cap="test"
+```julia
 M = 10.0.^(-3:0.1:-0.5)
 eq = [equilibrium(μ=m, s=0.2) for m in M]
 plot(M, eq,
