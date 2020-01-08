@@ -143,7 +143,28 @@ function haploid(p::Float64=0.5; μ::Float64=0.01, s::Float64=0.1)
 end
 ```
 
-We can also write a function to give the value of $\hat P$ directly:
+We can use this function to generate a time series, and ensure that the model
+reaches the predicted equilibrium:
+
+```julia
+ts = zeros(Float64, 20)
+ts[1] = 0.0001
+for i in 2:length(ts)
+  ts[i] = haploid(ts[i-1]; μ=0.2, s=0.93)
+end
+p_pred = 1-0.2/0.93
+plot(ts,
+  frame=:box, leg=false,
+  m = :circle, ms=5,
+  msw=2, msc=:white,
+  c=:grey, mc=:black, ls=:dash,
+  xlabel = "Timestep",
+  ylabel = "Frequency of A", ylim=(0,1)
+)
+hline!([p_pred], c=:red, ls=:dot)
+```
+
+We can also write a function to give the value of $\hat p$ directly:
 
 ```julia
 """
@@ -157,6 +178,8 @@ function equilibrium(;μ::Float64=0.01, s::Float64=0.3)
 end
 ```
 
+We will use this function to
+
 ```julia; fig_cap="test"
 M = 10.0.^(-3:0.1:-0.5)
 eq = [equilibrium(μ=m, s=0.2) for m in M]
@@ -167,12 +190,6 @@ plot(M, eq,
   xaxis=:log, xlabel="Mutation rate", xlim=(0.001,1.0),
   ylabel="Equilibrium frequency of A", ylim=(0,1))
 vline!([0.2], c=:red, ls=:dot)
-```
-
-```julia
-p = collect(0.0:0.05:1.0)
-frequencies = hw.(p)
-plot(frequencies)
 ```
 
 ### Stochastic simulations
