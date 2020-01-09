@@ -38,9 +38,9 @@ mathematical analysis of the model *must* be accompanied by text.
 
 All homework is graded on a total of 100 points. In all cases, you must copy the
 instructions (from Studium) into the first quote block, and then write an
-introduction. Do not modify the headings of any of the sections, though you are
-allowed to (and most definitely will need to) add third-level headings (`###
-heading`).
+introduction. Usually, you would not need to modify the headings of any of the
+sections, though you are allowed to (and most definitely will need to) add
+third-level headings (`### heading`).
 
 **Model justification:** 10 points, including a discussion of the parameters and/or functional responses used
 
