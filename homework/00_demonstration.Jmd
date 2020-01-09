@@ -60,6 +60,10 @@ $a$ and then having only the reversal mutation is minuscule. This represents an
 acceptable simplification, which also greatly simplifies the analysis of the
 model.
 
+All of the parameters and in this model are either frequencies ($\mu$, $p$), or
+dimensionless ($s$) -- therefore, the model is dimensionless. This being said,
+we know that all variables and parameters must be within $[0,1]$.
+
 ## Model analysis
 
 This model is a discrete time model, so it has an equilibrium every time $p(t+1)
