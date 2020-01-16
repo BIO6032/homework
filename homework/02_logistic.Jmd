@@ -24,9 +24,9 @@ using DifferentialEquations
 
 <!-- Use the two models for the strong and weak Allee effect, respectively -->
 
-$$\frac{\text{d}n}\frac{d}t = n\times r\times \left(\frac{n}{A}-1\right)\times \left(1-\frac{n}{K}\right)$$
+$$\frac{\text{d}}{\text{d}t}n = n\times r\times \left(\frac{n}{A}-1\right)\times \left(1-\frac{n}{K}\right)$$
 
-$$\frac{\text{d}n}\frac{d}t = n\times \frac{r}{K}N^2\times \left(1-\frac{n}{K}\right)$$
+$$\frac{\text{d}}{\text{d}t}n = n\times \frac{r}{K}N^2\times \left(1-\frac{n}{K}\right)$$
 
 ## Model analysis
 
