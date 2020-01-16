@@ -1,0 +1,35 @@
+---
+title: Logistic growth with Allee effects
+permalink: logistic/
+layout: page
+---
+
+# Introduction
+
+> Under the Allee effect, the growth of a population is reduced at low
+> densities. Using the strong and the weak Allee effect models as indicated
+> below, find the equilibrium through calculations, then confirm these using a
+> graphical technique. Finally, write an ordinary differential equations model
+> for the strong Allee effect, and verify that populations starting on different
+> sides of the equilibrium do end up where they are predicted.
+
+## Required packages
+
+```julia
+using Plots
+using DifferentialEquations
+```
+
+## Model description and justification
+
+<!-- Use the two models for the strong and weak Allee effect, respectively -->
+
+$$\frac{\text{d}n}\frac{d}t = n\times r\times \left(\frac{n}{A}-1\right)\times \left(1-\frac{n}{K}\right)$$
+
+$$\frac{\text{d}n}\frac{d}t = n\times \frac{r}{K}N^2\times \left(1-\frac{n}{K}\right)$$
+
+## Model analysis
+
+## Simulations
+
+## Conclusions
