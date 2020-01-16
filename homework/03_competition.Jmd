@@ -1,0 +1,31 @@
+---
+title: Logistic growth with Allee effects
+permalink: logistic/
+layout: page
+---
+
+# Introduction
+
+> Using the logistic model of growth for two populations with both intra and
+> inter-specific competition, find the expression of the zero-growth isoclines,
+> then define when the equilibriums with 1 and 2 species are feasible. When this
+> is done, simulate this system as an ordinary differential equations problem,
+> under three or four combinations of parameters, to show that the system
+> behaves as predicted. There are various ways to formulate the model, either
+> using a global carrying capacity for the population, or using four different
+> competition terms (for intra and inter-specific competition).
+
+## Required packages
+
+```julia
+using Plots
+using DifferentialEquations
+```
+
+## Model description and justification
+
+## Model analysis
+
+## Simulations
+
+## Conclusions
