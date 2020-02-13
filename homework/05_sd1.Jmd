@@ -1,0 +1,34 @@
+---
+title: Patch occupancy
+permalink: sd1/
+layout: page
+---
+
+# Introduction
+
+> The Levins model describes the occupancy of a series of patches, as a function
+> of their colonization and extinction rate. Find the proportion of occupied
+> patches at equilibrium, and then perform a simulation using an ordinary
+> differential equation to confirm the results. Finally, assuming that the
+> environment can be represented by a series of patches where patch i can
+> colonize both (i-1) and (i+1), perform a simple simulation to see if you reach
+> the same results, and discuss.
+
+## Required packages
+
+```julia
+using Plots
+using DifferentialEquations
+```
+
+## Model description and justification
+
+The Levins model is usually defined as $\dot p = c(h-p)p-ep$, where $p$ is the
+proportion of occupied patches, $h$ is the total number of patches, $c$ is the
+colonization rate, and $e$ is the extinction rate in occupied patches.
+
+## Model analysis
+
+## Simulations
+
+## Conclusions

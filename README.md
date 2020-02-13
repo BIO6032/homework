@@ -28,5 +28,5 @@ curved.
 | `07` | [Stochastic model of epidemics](/homework/epidemics)     |      |     *      |           5 |
 | `08` | [Spatial dynamics 2](/homework/sd2)                      |      |     **     |          12 |
 | `09` | [Parameters inference](/homework/inference)              |      |    ***     |          12 |
-| `10` | [Evolutionary branching 2](/homework/eia)                |      |    ***     |          12 |
+| `10` | [Evolutionary branching 2](/homework/eia2)                |      |    ***     |          12 |
 | `11` | [Spatial dynamics 3](/homework/sd3)                      |      |    ***     |          12 |
