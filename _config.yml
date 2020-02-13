@@ -1,0 +1,4 @@
+baseurl: /homework
+name: BIO6032
+description: "change the _config.yml to put your name here"
+avatar: https://raw.githubusercontent.com/BIO6032/homework/master/dist/images/logo.jpg

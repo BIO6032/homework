@@ -1,0 +1,38 @@
+---
+title: Bifurcation diagram
+permalink: bifurcation/
+layout: page
+---
+
+# Introduction
+
+> Starting from the logistic model of growth with competition, you will (i)
+> propose an analysis to show how we can find a vaalue of the growth rate *r*
+> after which the population cannot persist (this will involve finding the
+> maximum of a function, and then iterating this function enough times from this
+> maximum), and (ii) plot the bifurcation diagram of the logistic model to show
+> that there is indeed a maximal growth rate after which the system becomes
+> unstable. Please note that you should not attempt to calculate this value by
+> hand, but you may attempt to guess it based on the results of the second step.
+
+## Required packages
+
+````julia
+using Plots
+````
+
+
+
+
+
+## Model description and justification
+
+<!-- Use this model, it assumes that K = 1, making the system dimensionless -->
+
+$$n(t+1) = n(t) + r\times n(t)\times \left(1-n(t)\right)$$
+
+## Model analysis
+
+## Simulations
+
+## Conclusions

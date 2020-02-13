@@ -1,0 +1,31 @@
+---
+title: Evolutionary Invasion Analysis 1
+permalink: eia/
+layout: page
+---
+
+# Introduction
+
+> In Brannstrom et al (Games, 2013), there is a model of bird migration timing.
+> Perform an evolutionary invasion analysis of this model, then write code for a
+> simulation study, and discuss the ecological consequences of these results for
+> bird populations under climate change.
+
+## Required packages
+
+````julia
+using Plots
+using DifferentialEquations
+````
+
+
+
+
+
+## Model description and justification
+
+## Model analysis
+
+## Simulations
+
+## Conclusions
